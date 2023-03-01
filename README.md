@@ -3,7 +3,8 @@
 This is an application for restaurants to allows users to create, update, view, delete reservations, as well as seat them at various tables within the restaurant.
 
 ## Live Deployment
-[Render](https://restaurant-reservation-dsjy.onrender.com)
+[Backend](https://restaurant-reservation-backend-kgsf.onrender.com)
+[Frontend](https://restaurant-reservation-frontend-pxon.onrender.com)
 
 ### Technologies:
 
