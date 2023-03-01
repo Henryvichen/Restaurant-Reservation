@@ -2,6 +2,9 @@
 
 This is an application for restaurants to allows users to create, update, view, delete reservations, as well as seat them at various tables within the restaurant.
 
+## Live Deployment
+[Render](https://restaurant-reservation-dsjy.onrender.com)
+
 ### Technologies:
 
 [![postgresql](https://cdn.iconscout.com/icon/free/png-256/postgresql-11-1175122.png)](https://www.postgresql.org/) 
