@@ -15,7 +15,7 @@ This is an application for restaurants to allows users to create, update, view, 
 ![New Reservation SS](https://i.gyazo.com/c4057147b7deae532be14b13ba9d2207.png)
 Allow user to create a new Reservation. 
 
-## New Table
+## Create Table
 ![New Table SS](https://i.gyazo.com/071e9015af1c09f4af145ce156ffced9.png)
 Allow user to create new Table.
 
