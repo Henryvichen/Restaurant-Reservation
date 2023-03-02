@@ -112,13 +112,12 @@ function validatePeople(req, res, next) {
 //Check if mobile is a number
 function validateNumber(req, res, next) {
   const { data: { mobile_number } = {} } = req.body;
-  if (typeof mobile_number !== "number") {
-    return next({
-      status: 400,
-      message: `mobile needs to be a number`,
-    });
+  if (Number(mobile_number)>=0) { 
+    return next(); 
   }
-  next();
+    next({
+      status:400, message:'mobile number needed'
+    })
 }
 
 //Check if there is a valid status property
