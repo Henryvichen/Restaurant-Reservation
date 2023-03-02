@@ -109,6 +109,18 @@ function validatePeople(req, res, next) {
   next();
 }
 
+//Check if mobile is a number
+function validateNumber(req, res, next) {
+  const { data: { mobile_number } = {} } = req.body;
+  if (typeof mobile_number !== "number") {
+    return next({
+      status: 400,
+      message: `mobile needs to be a number`,
+    });
+  }
+  next();
+}
+
 //Check if there is a valid status property
 function validateStatusIsValid(req, res, next) {
   const { data: { status } = {} } = req.body;
@@ -218,6 +230,7 @@ module.exports = {
     validateResDateIsNotTuesday,
     validateResTime,
     validateResTimeStrict,
+    validateNumber,
     validatePeople,
     validateStatusIsValid,
     asyncErrorBoundary(create),
@@ -229,6 +242,7 @@ module.exports = {
     validateResDateIsNotTuesday,
     validateResTime,
     validateResTimeStrict,
+    validateNumber,
     validatePeople,
     validateStatusIsValid,
     asyncErrorBoundary(editReservation),
