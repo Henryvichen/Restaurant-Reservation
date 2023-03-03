@@ -103,7 +103,7 @@ function validatePeople(req, res, next) {
   if (!people || typeof people !== "number") {
     return next({
       status: 400,
-      message: `people need to be a number`,
+      message: `people needs to be a number`,
     });
   }
   next();
@@ -126,7 +126,7 @@ function validateStatusIsValid(req, res, next) {
   if (status === "seated" || status === "finished") {
     return next({
       status: 400,
-      message: `status cannot be seated or finished`,
+      message: `Status can't be seated or finished`,
     });
   }
   next();
